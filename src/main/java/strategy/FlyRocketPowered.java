@@ -1,4 +1,4 @@
-package strategypattern;
+package strategy;
 
 /**
  * @author lhq
