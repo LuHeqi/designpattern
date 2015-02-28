@@ -15,5 +15,4 @@ public class ModelDuck extends Duck {
 		System.out.println("I am a model duck");
 	}
 
-
 }

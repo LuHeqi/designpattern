@@ -10,10 +10,11 @@ public abstract class Duck {
 
 	public abstract void display();
 
-	public void performQuack(){
+	public void performQuack() {
 		quackBehavior.quack();
 	}
-	public void performFly(){
+
+	public void performFly() {
 		flyBehavior.fly();
 	}
 

@@ -4,7 +4,7 @@ package observer;
  * @author lhq
  * @version $Id: DUMMY $
  */
-public class SimpleWeatherDisplay implements Observer,DisplayElement {
+public class SimpleWeatherDisplay implements Observer, DisplayElement {
 	private String description;
 	private Observable weatherData;
 
@@ -15,7 +15,7 @@ public class SimpleWeatherDisplay implements Observer,DisplayElement {
 
 	@Override
 	public void display() {
-		System.out.println("simple weather precast :"+description);
+		System.out.println("simple weather precast :" + description);
 	}
 
 	@Override

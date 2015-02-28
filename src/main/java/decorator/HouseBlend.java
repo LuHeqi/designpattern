@@ -5,7 +5,7 @@ package decorator;
  * @author lhq
  * @version $Id: DUMMY $
  */
-public class HouseBlend extends Beverage{
+public class HouseBlend extends Beverage {
 	public HouseBlend() {
 		description = " House Blend Coffee";
 	}

@@ -5,5 +5,5 @@ package observer;
  * @version $Id: DUMMY $
  */
 public interface Observer {
-	void update(Observable observerable,Object arg);
+	void update(Observable observerable, Object arg);
 }

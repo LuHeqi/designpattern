@@ -4,10 +4,10 @@ package observer;
  * @author lhq
  * @version $Id: DUMMY $
  */
-public class CurrentConditionDisplay implements Observer ,DisplayElement{
-	private  float temperature;
+public class CurrentConditionDisplay implements Observer, DisplayElement {
+	private float temperature;
 	private float pressure;
-	private  String description;
+	private String description;
 
 	private Observable weatherData;
 
@@ -33,6 +33,6 @@ public class CurrentConditionDisplay implements Observer ,DisplayElement{
 
 	@Override
 	public void display() {
-		System.out.println("current condition : "+temperature+" degree ,  "+pressure +" Mpa , "+description);
+		System.out.println("current condition : " + temperature + " degree ,  " + pressure + " Mpa , " + description);
 	}
 }

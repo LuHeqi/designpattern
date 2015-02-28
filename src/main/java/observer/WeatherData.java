@@ -24,7 +24,7 @@ public class WeatherData implements Observable {
 
 	@Override
 	public void removeObserver(Observer observer) {
-		if ( obs.contains(observer)) {
+		if (obs.contains(observer)) {
 			obs.remove(observer);
 		}
 	}
@@ -32,7 +32,7 @@ public class WeatherData implements Observable {
 	@Override
 	public void notifyObservers() {
 		for (Observer observer : obs) {
-			observer.update(this,null);
+			observer.update(this, null);
 		}
 	}
 
@@ -40,9 +40,9 @@ public class WeatherData implements Observable {
 		notifyObservers();
 	}
 
-	public void setMeasurements(float temperature,float pressure,String description){
+	public void setMeasurements(float temperature, float pressure, String description) {
 		this.temperature = temperature;
-		this.pressure =pressure;
+		this.pressure = pressure;
 		this.description = description;
 		measurementsChanged();
 	}
