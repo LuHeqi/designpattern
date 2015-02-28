@@ -2,7 +2,7 @@ package abstractfactory;
 
 public class AbstractFactoryPatternDemo {
 	public static void main(String[] args) {
-		//get shape factory
+		//get shape simplefactory
 		AbstractFactory shapeFactory = FactoryProducer.getFactory("SHAPE");
 		//get an object of Shape Circle
 		Shape shape1 = shapeFactory.getShape("CIRCLE");
@@ -16,7 +16,7 @@ public class AbstractFactoryPatternDemo {
 		Shape shape3 = shapeFactory.getShape("SQUARE");
 		//call draw method of Shape Square
 		shape3.draw();
-		//get color factory
+		//get color simplefactory
 		AbstractFactory colorFactory = FactoryProducer.getFactory("COLOR");
 		//get an object of Color Red
 		Color color1 = colorFactory.getColor("RED");
